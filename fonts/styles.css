@@ -1,0 +1,29 @@
+.opensans{
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 300;
+	font-style: italic;
+}
+.trykker{
+	font-family: "Trykker", serif;
+	text-decoration: line-through;
+}
+.Oranienbaum{
+	font-family: "Oranienbaum", serif;
+	text-align: center;
+	font-size: 30px;
+	
+}
+.Arial{
+	font-family: "Arial", sans-serif;
+	word-spacing: 30px;
+	text-decoration: blueviolet wavy overline;
+	color: blueviolet;
+	text-shadow: 2px 2px 5px rgb(38, 15, 60); 
+}
+.sans{
+	font-family: "Times new roman", serif;
+	letter-spacing: 5px;
+	text-decoration: double underline;
+}
