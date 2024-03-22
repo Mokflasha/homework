@@ -1,0 +1,19 @@
+.scroll{
+	height: 500px;
+	background: #a3c0e04b;
+	overflow: auto;
+	border: 1px solid #000;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+}
+.block{
+	width: 250px;
+	display: inline-block;
+	background-color: rgb(223, 186, 133);
+	margin: 5px;
+	padding: 20px 20px 15px;
+	border: 1px solid #000;
+	border-radius: 25px;
+	box-sizing: border-box;
+	box-shadow: inset 0 0 5px #000000;
+}
