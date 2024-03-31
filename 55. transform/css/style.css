@@ -50,7 +50,7 @@
 
 /* ================== Выполнение дз ниже =================== */
 
-/* .area__place--for-blue{
+ .area__place--for-blue{
 	transform: translate(630px, -300px) scale(2) rotate(180deg);
 }
 
@@ -71,4 +71,4 @@
 }
 .quads__quad--blue{
 	transform: translate(835px, -295px) scale(2) rotate(180deg);
-} */
+} 
