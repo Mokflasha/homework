@@ -1,0 +1,62 @@
+body {
+	line-height: 1.5;
+	font-family: 'Proxima Nova Bd';
+
+
+}
+
+.wrapper {
+	min-height: 100%;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+	height: 100%;
+}
+
+.button{
+	position: relative;
+	width: 100%;
+	background-color: rgb(156, 211, 163) ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: inset 2px -2px 12px 0px rgba(34, 111, 33, 0.36); 
+	color: white;
+	/* border-radius: 17px; */
+}	
+.button::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	right: -10px;
+	bottom: -10px;
+	/* width: 120%;
+	max-width: 210px;
+	height: 75px; */
+	/* border-radius: 20px; Меньший радиус тени */
+	/* background-color: rgba(255, 255, 255, 0.45); Цвет окантовки */
+}
+
+.button::after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.button:hover::after{
+	background: #54e165;
+}
+.button:focus::after{
+	background:rgb(92, 205, 106);
+}

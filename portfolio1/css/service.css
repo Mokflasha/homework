@@ -1,0 +1,74 @@
+.service {
+}
+.service__inner {
+	display: flex;
+	justify-content: space-between;
+	height: 655px;
+	align-items: center;
+}
+.service__info {
+	max-width: 444px;
+}
+.service__title {
+	color: rgb(73, 94, 76);
+	font-size: 45px;
+	line-height: 60px;
+	text-align: left;
+	padding-bottom: 22px;
+}
+.line__span-service::after{
+	content: '';
+	background-color: #78C081;
+	display: inline-block;
+	vertical-align: super;
+	width: 235px;
+	height: 2px;
+	margin-left: 30px;
+}
+.service__paragraph {
+	color: rgb(132, 132, 132);
+	font-family:'Proxima Nova Rg';
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	letter-spacing: 0%;
+	text-align: left;
+	
+}
+.service__active {
+	display: flex;
+	max-width: 1400px;
+	/* justify-content: end; */
+
+}
+.service__tab {
+	display: flex;
+}
+.tab__nav {
+	display: flex;
+	flex-direction: row;
+	writing-mode: vertical-lr;
+  transform-origin: center;
+  transform: rotate(-180deg); 
+
+}
+.tab__item svg{
+	transform: rotate(180deg); 
+}
+.service__choosen--info {
+	background: #eca7a7;
+	max-width: 676px ;
+
+}
+.tab__info {
+
+}
+.tab__photo {
+
+}
+.tab-info__list {
+}
+.tab-info__item {
+}
+.tab__icon {
+}
