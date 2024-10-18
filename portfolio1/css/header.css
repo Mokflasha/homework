@@ -4,6 +4,15 @@
 	margin-bottom: 100px;
 }
 
+.header__top{
+	width: 100%;
+	top: 0;
+	border-radius: 0px 0px 70px 70px;
+	height: 114px;
+	transition-duration: .4s;
+	z-index: 11;
+}
+
 .header__nav{
 	display: flex;
 	max-width: 1350px;
@@ -16,7 +25,7 @@
 .nav{
 	color: rgb(73, 94, 76);
 	font-family: 'Proxima Nova Rg';
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 18px;
 	letter-spacing: 0%;
 	text-align: left;
@@ -24,78 +33,48 @@
 }
 
 .nav__link{
-	padding-right: 40px;
+	margin-right: 40px;
 }
 
 .header__button{
 	max-width: 190px;
 	height: 55px;
-	font-family: 'Proxima Nova Lt';
 	font-size: 15px;
 	line-height: 21px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
 	border-radius: 17px;
-	z-index: 1;
 }
 
 .header__button::before{
 	background-color: rgba(255, 255, 255, 0.45);
 	border-radius: 20px;
-	z-index: -1;
 	top: -10px;
 	left: -10px;
 	right: -10px;
 	bottom: -10px;
 }
 .header__button::after{
-	content: '';
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
-	background-color: rgb(156, 211, 163);
-	box-shadow: inset 2px -2px 12px 0px rgba(34, 111, 33, 0.36); 
 	border-radius: 17px;
-	z-index: -1;
-
 }
 
 .button__application{
 	max-width: 447px;
 	height: 85px;
-	font-family: 'Proxima Nova Lt';
 	font-size: 17px;
 	line-height: 23px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
 	border-radius: 30px;
 	margin-bottom: 76px;
-	z-index: 1;
 }
 
 .button__application::before {
-	background-color: rgba(120, 192, 129, 0.25);;
 	border-radius: 40px;
 	top: -15px;
 	left: -15px;
 	right: -15px;
 	bottom: -15px;
-	z-index: -1;
 }
 
 .button__application::after{
-	content: '';
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
-	background-color: rgb(156, 211, 163);;
-	box-shadow: inset 2px -2px 12px 0px rgba(34, 111, 33, 0.36); 
 	border-radius: 30px;
-	z-index: -1;
 }
 
 .header__info {
@@ -151,3 +130,40 @@
 	padding-right: 70px;
 }
 
+.burger-icon {
+	display: none;
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	align-items: center;
+	justify-content: center;
+	z-index: 16;
+}
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+	display: block;
+	width: 30px;
+	height: 3px;
+	border-radius: 100px;
+
+}
+
+.burger-icon span {
+	position: relative;
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+	content: '';
+	position: absolute;
+}
+
+.burger-icon span::before {
+	top: -8px;
+}
+
+.burger-icon span::after {
+	bottom: -8px;
+}

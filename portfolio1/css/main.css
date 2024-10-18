@@ -1,8 +1,7 @@
+
 body {
 	line-height: 1.5;
 	font-family: 'Proxima Nova Bd';
-
-
 }
 
 .wrapper {
@@ -23,26 +22,23 @@ body {
 .button{
 	position: relative;
 	width: 100%;
+	letter-spacing: 1px;
 	background-color: rgb(156, 211, 163) ;
 	display: flex;
+	text-transform: uppercase;
+	font-family: 'Proxima Nova Lt';
 	align-items: center;
 	justify-content: center;
 	box-shadow: inset 2px -2px 12px 0px rgba(34, 111, 33, 0.36); 
 	color: white;
-	/* border-radius: 17px; */
+	z-index: 1;
 }	
+
 .button::before {
 	content: "";
 	position: absolute;
-	top: -10px;
-	left: -10px;
-	right: -10px;
-	bottom: -10px;
-	/* width: 120%;
-	max-width: 210px;
-	height: 75px; */
-	/* border-radius: 20px; Меньший радиус тени */
-	/* background-color: rgba(255, 255, 255, 0.45); Цвет окантовки */
+	z-index: -1;
+	background: rgba(120, 192, 129, 0.25);
 }
 
 .button::after {
@@ -52,11 +48,315 @@ body {
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
+	transition: all .2s;
+	background-color: rgb(156, 211, 163);
+	z-index: -1;
+	box-shadow: inset 2px -2px 12px 0px rgba(34, 111, 33, 0.36); 
 }
 
 .button:hover::after{
 	background: #54e165;
+	transition: all .2s;
 }
+
 .button:focus::after{
 	background:rgb(92, 205, 106);
+}
+/* ------------------------------------------------------------------- */
+
+
+.modal__call {
+	position: fixed;
+	inset: 0;
+	z-index: 10;
+	background: rgba(217, 250, 221, 0.55);
+	padding: 15px;
+	backdrop-filter: blur(10px);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	opacity: 0;
+	visibility: hidden;
+	transition: all .6s;
+}
+
+.body--opened-modal-call .modal__call {
+	opacity: 1;
+	visibility: visible;
+}
+
+.modal__window {
+	position: relative;
+	background: rgb(217, 250, 221);
+	border-radius: 50px;
+	box-shadow: 0px 0px 10px 0px rgba(73, 93, 76, 0.1);
+	max-width: 445px;
+}
+.modal__cancel-call {
+	position: absolute;
+	top: -80px;
+	right: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(156, 211, 163) ;
+	z-index: 11;
+	width: 53px;
+	height: 49px;
+	border-radius: 15px;
+	box-shadow: inset 2px -2px 12px 0px rgba(34, 111, 33, 0.36);
+}
+
+.modal__cancel-call::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	background: rgb(120, 192, 129, 0.25);
+	border-radius: 20px;
+	top: -10px;
+	left: -10px;
+	right: -10px;
+	bottom: -10px;
+
+}
+.modal__cancel-call::after{
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	transition: all .2s;
+	background-color: rgb(156, 211, 163);
+	z-index: -1;
+	border-radius: 15px;
+	box-shadow: inset 2px -2px 12px 0px rgba(34, 111, 33, 0.36); 
+}
+.modal__cancel-call:hover::after{
+	background: #54e165;
+	transition: all .2s;
+}
+
+.modal__cancel-call:focus::after{
+	background:rgb(92, 205, 106);
+}
+.modal__title-call {
+	color: rgb(73, 94, 76);
+	font-size: 45px;
+	text-transform: capitalize;
+	line-height: 60px;
+	padding: 35px 15px 20px 35px;
+
+}
+.line__span-modal-call::after {
+	content: '';
+	background-color: #78C081;
+	display: inline-block;
+	width: 130px;
+	height: 2px;
+	vertical-align: super;
+	margin-left: 30px;
+}
+.modal__inner-call {
+	border-radius: 50px;
+	background-color: white;
+	width: 100%;
+	font-family: 'Proxima Nova Rg';
+	box-shadow: 0px 0px 10px 0px rgba(73, 93, 76, 0.1);
+}
+.modal__text {
+	color: rgb(124, 163, 129);
+	font-size: 16px;
+	line-height: 26px;
+	padding: 35px 35px 17px 35px;
+}
+.schedule {
+	display: flex;
+	color: rgb(124, 163, 129);
+	display: flex;
+	display: inline-flex;
+	align-items: center;
+	flex-shrink: 0;
+	gap: 15px;
+	padding-left: 35px;
+	padding-bottom: 30px;
+}
+.modal__block-tel {
+	display: flex;
+	padding-bottom: 35px;
+	padding-left: 35px;
+}
+.modal__tel1 {
+	display: flex;
+	color: rgb(132, 132, 132);
+	display: flex;
+	display: inline-flex;
+	align-items: center;
+	flex-shrink: 0;
+	gap: 15px;
+	padding-right: 10px;
+	border-right:  solid 0.5px rgb(120, 192, 129); 
+}
+.modal__tel1 img{
+	width: 22px;
+	height: 22px;
+}
+.modal__tel2 img{
+	width: 22px;
+	height: 22px;
+}
+.modal__tel2 {
+	padding-left: 20px;
+	display: flex;
+	color: rgb(132, 132, 132);
+	display: flex;
+	display: inline-flex;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+
+/* --------------------------------------------------- */
+
+.modal__contact {
+	position: fixed;
+	inset: 0;
+	z-index: 10;
+	background: rgba(217, 250, 221, 0.55);
+	padding: 15px;
+	backdrop-filter: blur(10px);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	opacity: 0;
+	visibility: hidden;
+	transition: all .6s;
+}
+.body--opened-modal-contact .modal__contact {
+	opacity: 1;
+	visibility: visible;
+}
+.modal__window-contact {
+	position: relative;
+	background: rgb(217, 250, 221);
+	border-radius: 50px;
+	box-shadow: 0px 0px 10px 0px rgba(73, 93, 76, 0.1);
+	max-width: 415px;
+}
+.modal__cancel-contact {
+	position: absolute;
+	top: -80px;
+	right: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(156, 211, 163) ;
+	z-index: 11;
+	width: 53px;
+	height: 49px;
+	border-radius: 15px;
+	box-shadow: inset 2px -2px 12px 0px rgba(34, 111, 33, 0.36);
+}
+
+.modal__cancel-contact::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	background: rgb(120, 192, 129, 0.25);
+	border-radius: 20px;
+	top: -10px;
+	left: -10px;
+	right: -10px;
+	bottom: -10px;
+
+}
+.modal__cancel-contact::after{
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	transition: all .2s;
+	background-color: rgb(156, 211, 163);
+	z-index: -1;
+	border-radius: 15px;
+	box-shadow: inset 2px -2px 12px 0px rgba(34, 111, 33, 0.36); 
+}
+.modal__cancel-contact:hover::after{
+	background: #54e165;
+	transition: all .2s;
+}
+
+.modal__cancel-contact:focus::after{
+	background:rgb(92, 205, 106);
+}
+.contact-title{
+	color: rgb(73, 94, 76);
+	font-size: 45px;
+	text-transform: capitalize;
+	line-height: 60px;
+	padding: 35px 15px 20px 35px;
+	margin-right: 40px;
+}
+
+.modal__inner-contact {
+	border-radius: 50px;
+	background-color: white;
+	width: 412px;
+	font-family: 'Proxima Nova Rg';
+	box-shadow: 0px 0px 10px 0px rgba(73, 93, 76, 0.1);
+}
+.footer__form-contact {
+	padding: 35px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 400px;
+}
+
+.button__modal-contacts {
+	height: 55px;
+	font-size: 15px;
+	border-radius: 50px;
+	max-width: 327px;
+}
+.button__modal-contacts::after {
+	border-radius: 17px;
+}
+.button__modal-contacts::before {
+	border-radius: 20px;
+	z-index: -1;
+	top: -10px;
+	left: -10px;
+	right: -10px;
+	bottom: -10px;
+}
+.fdkjg{
+	padding-left: 40px;
+	border-radius: 17px;
+	padding-bottom: 35px;
+}
+.logo__modal{
+	padding: 15px 92px;
+}
+
+
+@media (max-width: 1200px){
+	.nav {
+		visibility: hidden;
+	}
+
+	.header__button{
+		visibility: hidden;
+	}
+	a.burger-icon {
+		display: flex;
+		z-index: 16;
+		background-color: red; /* временный стиль для проверки */
+	}	
 }
