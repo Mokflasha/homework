@@ -1,0 +1,99 @@
+.scheme {
+	padding-bottom: 150px;
+}
+
+.scheme__inner {
+	display: flex;
+	flex-direction: column;
+}
+
+.left {
+	max-width: 470px;
+	align-self: start;
+	padding-bottom: 16px;
+	position: relative;
+}
+.sheme__title {
+	color: rgb(120, 192, 129);
+	font-size: 35px;
+	font-family: 'Proxima Nova Rg';
+	line-height: 47px;
+	text-transform: capitalize;
+}
+.scheme__par {
+	color: rgb(73, 94, 76);
+	font-family: 'Proxima Nova Rg';
+	font-size: 16px;
+	line-height: 26px;
+}
+.right {
+	max-width: 540px;
+	align-self: end;
+	padding-bottom: 16px;
+	text-align: right;
+	position: relative;
+}
+.img1::before{
+	content: url('../img/main/Frame.png');
+  display: inline-block;
+	position: absolute;
+	top: -90px;
+	left: 130px;
+	z-index: -1;
+}
+.img2::before{
+	content: url('../img/main/Fr5me.png');
+  display: inline-block;
+	position: absolute;
+	top: -85px;
+	left: 85px;
+	z-index: -1;
+}
+.img3::before{
+	content: url('../img/main/Fr6me.png');
+  display: inline-block;
+	position: absolute;
+	top: -90px;
+	left: 50px;
+	z-index: -1;
+}
+.img4::before{
+	content: url('../img/main/Frme.png');
+  display: inline-block;
+	position: absolute;
+	top: -70px;
+	left: 50px;
+	z-index: -1;
+}
+.img5::before{
+	content: url('../img/main/Fra7e.png');
+  display: inline-block;
+	position: absolute;
+	top: -70px;
+	left: 90px;
+	z-index: -1;
+}
+.img6::before{
+	content: url('../img/main/Fr8me.png');
+  display: inline-block;
+	position: absolute;
+	top: -5px;
+	left: -130px;
+	z-index: -1;
+}
+.end{
+	padding-bottom: 130px;
+}
+.center {
+	align-self: center;
+	position: relative;
+}
+
+.center::before {
+	content: url('../img/main/7rame.png');
+  display: inline-block;
+	position: absolute;
+	top: -10px;
+	left: 115px;
+	z-index: -1;
+}
