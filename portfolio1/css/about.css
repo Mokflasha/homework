@@ -21,7 +21,7 @@
 	padding-left: 45px;
 }
 .line__span-about::after {
-	content: url('../img/svg/Group 20348.svg');
+	content: url('../img/svg/Group20348.svg');
 	display: inline-block;
 	margin-left: 30px;
 }
