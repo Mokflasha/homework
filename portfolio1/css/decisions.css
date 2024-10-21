@@ -1,0 +1,84 @@
+.decision {
+	background: url("../img/main/image88.png") 560px 120px / cover no-repeat;
+	width: 100%;
+	background-size: 1800px;
+	padding-bottom: 100px;
+}
+
+.lung {
+	position: absolute;
+	left: -350px;
+	top: -120px;
+}
+
+.decisions__inner {
+	display: flex;
+	flex-direction: column;
+}
+
+.decisions__title {
+	padding-bottom: 85px;
+	color: rgb(73, 94, 76);
+	font-size: 45px;
+	line-height: 60px;
+	text-transform: capitalize;
+}
+.line__span-decisions--media{
+	display: none;
+}
+
+.line__span-decisions::after {
+	content: '';
+	background-color: #78C081;
+	display: inline-block;
+	width: 200px;
+	height: 3px;
+	vertical-align: super;
+	margin-left: 30px;
+}
+
+.decisions__content {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 35px 47px;
+}
+
+.decisions__content--block {
+	position: relative;
+}
+
+.decisions__img {
+	object-fit: cover;
+	border-radius: 25px 25px 0 0;
+	width: 100%;
+}
+
+.price__block{
+	position: absolute;
+	top: 20px;
+	left: 0;
+	height: 28px;
+	padding: 3px 15px 0;
+	background: rgb(217, 250, 221);
+	color: rgb(73, 93, 76);
+	border-radius: 0px 10px 10px 0px;
+}
+
+.decisions__img {
+	max-width: 257px;
+	height: 92px;
+}
+
+.decisions__paragraph{
+	padding: 12px 0 12px 15px; 
+	border-radius: 0px 0px 25px 25px ;
+	box-shadow: 0px 1px 2px 0px rgba(46, 35, 25, 0.3);
+	color: rgb(120, 192, 129);
+	font-family: 'Proxima Nova Rg';
+	background-color: white;
+}
+
+.five{
+	padding: 0 0 0 15px;
+}
